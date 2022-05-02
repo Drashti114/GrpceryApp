@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "340595208021",
+    "project_id": "grocery-app-685a5",
+    "storage_bucket": "grocery-app-685a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340595208021:android:42518bc0dc71924a5589dc",
+        "android_client_info": {
+          "package_name": "com.example.groceryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340595208021-dgaloh0bdfpir5ifulalmeketvntol1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK2ZzfFG6xJnRnlw3e-9qCC2YZqeFV-gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340595208021-dgaloh0bdfpir5ifulalmeketvntol1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340595208021:android:fa1e9dfc025fd3395589dc",
+        "android_client_info": {
+          "package_name": "com.quintus.labs.grocerystore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340595208021-dgaloh0bdfpir5ifulalmeketvntol1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK2ZzfFG6xJnRnlw3e-9qCC2YZqeFV-gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340595208021-dgaloh0bdfpir5ifulalmeketvntol1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340595208021:android:67161f1e4f8e7bdb5589dc",
+        "android_client_info": {
+          "package_name": "com.quintus.labs.grocerystore.activity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340595208021-dgaloh0bdfpir5ifulalmeketvntol1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK2ZzfFG6xJnRnlw3e-9qCC2YZqeFV-gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340595208021-dgaloh0bdfpir5ifulalmeketvntol1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
