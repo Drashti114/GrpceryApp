@@ -15,7 +15,7 @@
         android:background="@drawable/shape_rect01">
 
         <ImageButton
-            android:id="@+id/ibbackw"
+            android:id="@+id/ibbackwu"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_back_white"
@@ -32,157 +32,204 @@
             android:textColorHint="@color/colorSecondary"
             android:textSize="30sp"
             android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ibgpsu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/ic_gps_white" />
     </RelativeLayout>
 
     <ImageView
-        android:id="@+id/imgkeyw"
+        android:id="@+id/imgkeywu"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/shape_circle01"
         android:layout_marginTop="60dp"
         android:padding="5dp"
         android:src="@drawable/ic_key_white"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="5dp"
         android:layout_centerHorizontal="true"/>
 
     <com.blogspot.atifsoftwares.circularimageview.CircularImageView
-        android:id="@+id/tvprofile"
+        android:id="@+id/tvprofileu"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_below="@+id/ibbackw"
+        android:layout_below="@+id/imgkeywu"
         android:layout_centerHorizontal="true"
         app:c_border="true"
+        android:layout_marginTop="0dp"
         app:c_border_color="@color/colorPrimary"
         app:c_border_width="1dp"
         android:src="@drawable/ic_person_grey"
-        tools:ignore="NotSibling"></com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+        tools:ignore="NotSibling"/>
+
 
     <EditText
-        android:id="@+id/etname"
+        android:id="@+id/etnameu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvprofile"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvprofileu"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shape_rect02"
-        android:drawableStart="@drawable/ic_mail_gray"
+        android:drawableStart="@drawable/ic_person_grey"
         android:drawablePadding="5dp"
-        android:hint="Full Name"
-        android:textSize="20sp"
-        android:textColor="@color/colorGrey02"
+        android:hint="Name"
         android:inputType="textPersonName|textCapWords"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="@color/colorGrey02"
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/etphone"
+        android:id="@+id/etphoneu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etname"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/etnameu"
+        android:layout_margin="5dp"
         android:background="@drawable/shape_rect02"
-        android:drawableStart="@drawable/ic_mail_gray"
+        android:drawableStart="@drawable/ic_phone_grey"
         android:drawablePadding="5dp"
         android:hint="Phone"
-        android:textSize="20sp"
-        android:textColor="@color/colorGrey02"
         android:inputType="phone"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="@color/colorGrey02"
+        android:textSize="20sp" />
 
     <LinearLayout
-        android:layout_margin="5dp"
-        android:layout_below="@id/etphone"
+        android:id="@+id/lladdressu"
+        android:layout_below="@id/etphoneu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/etname"
+            android:id="@+id/etcountryu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvprofile"
-            android:layout_margin="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/etphoneu"
+            android:layout_margin="5dp"
             android:background="@drawable/shape_rect02"
-            android:drawableStart="@drawable/ic_mail_gray"
+            android:drawableStart="@drawable/ic_location_grey"
             android:drawablePadding="5dp"
-            android:hint="Full Name"
+            android:hint="Counry"
             android:textSize="20sp"
             android:textColor="@color/colorGrey02"
-            android:inputType="textPersonName|textCapWords"
-            android:padding="10dp" />
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/etphone"
+            android:id="@+id/etstateu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/etname"
-            android:layout_margin="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/etphoneu"
+            android:layout_margin="5dp"
             android:background="@drawable/shape_rect02"
-            android:drawableStart="@drawable/ic_mail_gray"
+            android:drawableStart="@drawable/ic_location_grey"
             android:drawablePadding="5dp"
-            android:hint="Phone"
+            android:hint="State"
             android:textSize="20sp"
             android:textColor="@color/colorGrey02"
-            android:inputType="phone"
-            android:padding="10dp" />
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etcityu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etphoneu"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/ic_mail_grey"
+            android:drawablePadding="5dp"
+            android:hint="City"
+            android:textSize="20sp"
+            android:textColor="@color/colorGrey02"
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
     </LinearLayout>
 
     <EditText
-        android:id="@+id/etemail"
+        android:id="@+id/etaddressu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imgkeyw"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/lladdressu"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
         android:background="@drawable/shape_rect02"
-        android:drawableStart="@drawable/ic_mail_gray"
+        android:drawableStart="@drawable/ic_location_grey"
         android:drawablePadding="5dp"
-        android:hint="Email"
-        android:textSize="20sp"
+        android:hint="Address"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:padding="10dp"
         android:textColor="@color/colorGrey02"
-        android:inputType="textEmailAddress"
-        android:padding="10dp" />
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/etpwd"
+        android:id="@+id/etemailu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etemail"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/etaddressu"
+        android:layout_margin="5dp"
         android:background="@drawable/shape_rect02"
-        android:drawableStart="@drawable/ic_lock_gray"
+        android:drawableStart="@drawable/ic_mail_grey"
         android:drawablePadding="5dp"
-        android:hint="Password"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="@color/colorGrey02"
         android:textSize="20sp" />
 
+
+    <EditText
+        android:id="@+id/etpwdu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etemailu"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect02"
+        android:drawableStart="@drawable/ic_lock_grey"
+        android:drawablePadding="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/colorGrey02"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etcpwdu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpwdu"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect02"
+        android:drawableStart="@drawable/ic_lock_grey"
+        android:drawablePadding="5dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/colorGrey02"
+        android:textSize="20sp" />
+
+
     <TextView
-        android:id="@+id/tvfpwd"
+        android:id="@+id/tvfpwdu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etpwd"
+        android:layout_below="@+id/etcpwdu"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="20dp"
         android:text="Forgot Password?"
@@ -190,8 +237,8 @@
         android:textColor="@color/colorGrey02" />
 
     <Button
-        android:id="@+id/btnlogin"
-        android:text="Login"
+        android:id="@+id/btnregu"
+        android:text="Register"
         android:textColor="@color/colorSecondary"
         style="@style/Widget.AppCompat.Button.Colored"
         android:minWidth="120dp"
@@ -199,18 +246,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/tvfpwd"/>
+        android:layout_below="@id/tvfpwdu"/>
 
     <TextView
-        android:id="@+id/tvnoacnt"
+        android:id="@+id/tvregs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnlogin"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="25dp"
-        android:text="Not have account? Register"
+        android:layout_below="@+id/btnregu"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:textColor="@color/colorGrey02"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Are you Seller? Register Here"
+        android:textColor="@color/colorGrey02"
+        android:textSize="20sp" />
 
 </RelativeLayout>
